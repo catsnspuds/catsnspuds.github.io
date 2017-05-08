@@ -1,3 +1,21 @@
 <!doctype html>
-	<img src="cat.jpg" />
+	<head>
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+	<div id="container">
+		<img src="./img/kittles.png" />
+	</div>
+	<input class="add-potato" type="button" value="Add A Potato" />
+
+	<script>
+		$(function() {
+			$('.add-potato').on('click', function(event) {
+				$("#container").append("<img class='potato' src='./img/potato.png' />");
+				$( ".potato" ).draggable({ containment: "#container", scroll: false });
+			});
+		});
+	</script>
 </html>

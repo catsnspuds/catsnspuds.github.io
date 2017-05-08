@@ -1,0 +1,15 @@
+#container {
+  display: inline-block;
+  float: left
+}
+
+.add-potato {
+  float: left;
+}
+
+.potato {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
